@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
+body{
+    display: flex;
+    margin: 0px;
+}
+
+/*left panel*/
+.left-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .logo-div{
     font-family: 'Monoton', cursive;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(230, 230, 230, 0.455);
+    margin-top: 80px;
+}
+
+#image-credit{
+    font-size: 0.5em;
+    width: 140px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .left-side{
     background-image: url(img/pawel-czerwinski-Xk7ktUfyaNI-unsplash.jpg);
+    background-size: cover;
 }
 
 /*right panel*/
+.right-side{
+    flex: 2;
+}
