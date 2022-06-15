@@ -67,10 +67,36 @@ body{
     padding: 10px 30px;
     font-family: 'Courier New', Courier, monospace;
 }
+form .inputs{
+    display: flex;
+}
 
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px 50px 20px 0px;
+}
 
 label{
     font-size: 0.7rem;
+}
+
+input{
+    background-color: var(--almost-white);
+    width: 200px;
+    border-radius: 3px;
+    border-color: #E5E7EB;
+}
+
+input:focus{
+    box-shadow: 3px 3px 1px 1px;
+    border-color: blue;
 }
 
 .below-div{
