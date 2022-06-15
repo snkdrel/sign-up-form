@@ -3,10 +3,16 @@
 body{
     display: flex;
     margin: 0px;
+    --soft-grey: rgb(239, 239, 239);
+    --almost-white: rgb(249, 249, 249);
+    --quote-font-size: 1.5em;
+    --quote-font-weight: 600;
 }
 
 /*left panel*/
 .left-side{
+    background-image: url(img/pawel-czerwinski-Xk7ktUfyaNI-unsplash.jpg);
+    background-size: cover;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -21,21 +27,77 @@ body{
     justify-content: center;
     background-color: rgba(230, 230, 230, 0.455);
     margin-top: 80px;
+    gap: 10px;
 }
 
 #image-credit{
-    font-size: 0.5em;
-    width: 140px;
+    font-size: 0.7em;
+    width: 200px;
     margin: auto;
     margin-bottom: 10px;
 }
 
-.left-side{
-    background-image: url(img/pawel-czerwinski-Xk7ktUfyaNI-unsplash.jpg);
-    background-size: cover;
+.left-side a:link{
+    color: black;
+}
+
+.left-side a:visited{
+    color: black;
 }
 
 /*right panel*/
 .right-side{
     flex: 2;
+    background-color: var(--soft-grey);
+}
+
+.quote-div{
+    padding: 80px 140px 30px 30px;
+    font-size: var(--quote-font-size);
+    font-weight: var(--quote-font-weight);
+}
+
+#form-title{
+    font-size: var(--quote-font-size);
+    font-weight: var(--quote-font-weight);
+}
+
+.form-div{
+    background-color: var(--almost-white);
+    padding: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+label{
+    font-size: 0.7rem;
+}
+
+.below-div{
+    padding: 10px 30px;
+    height: 150px;
+}
+
+.below-div button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--almost-white);
+    background-color: palevioletred;
+    padding: 10px 35px;
+    font-weight: bold;
+    border-radius: 5px;
+    /*shadow*/
+    box-shadow: 3px 3px 5px 1px #000000;
+}
+
+.below-div a{
+    text-decoration: none;
+}
+
+.below-div a:link{
+    color: palevioletred;
+}
+
+.below-div a:visited{
+    color: purple;
 }
